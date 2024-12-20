@@ -106,4 +106,4 @@ services:
    - After deployment, you will be provided with a live URL for your application.
 
 #### Conclusion
-You have successfully created and deployed a simple Flask web application that greets users based on their input. This exercise reinforced your understanding of Flask, HTML, and cloud deployment using Render.
+You have successfully created and deployed a simple Flask web application that greets users based on their input. This exercise should have reinforced your understanding of Flask, HTML, and cloud deployment using Render.
