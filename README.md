@@ -89,6 +89,11 @@ if __name__ == '__main__':
      ```
    - Create a `render.yaml` file for Render configuration:
 
+8. **Create a Repository on GitHub and commit your files**:
+   - Open a GitHub account if you do not have one.
+   - Go to your project folder and initialize a repository
+   - Commit your files
+
 ```yaml
 services:
   - type: web
@@ -99,7 +104,7 @@ services:
     startCommand: "python app.py"
 ```
 
-8. **Deploy on Render**:
+9. **Deploy on Render**:
    - Go to [Render.com](https://render.com/) and create an account if you don't have one.
    - Once logged in, create a new web service and connect it to your GitHub repository containing your Flask application.
    - Render will automatically detect the `render.yaml` file and set up your application.
