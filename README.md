@@ -106,9 +106,13 @@ services:
 
 9. **Deploy on Render**:
    - Go to [Render.com](https://render.com/) and create an account if you don't have one.
-   - Once logged in, create a new web service and connect it to your GitHub repository containing your Flask application.
+   - Once logged in, click on "Projects" on the left pane and then "Deploy a Web Service"  under Overview. 
+   - Connect it to your GitHub account and select the repository containing your Flask application.
+   - As start command, enter "python app.py"
    - Render will automatically detect the `render.yaml` file and set up your application.
-   - After deployment, you will be provided with a live URL for your application.
+   - After deployment, you will be provided with a live URL for your application around the upper part of the browser window.
+   - Click on render icon on the upper left, find your deployment under the list, click on "..." on the right, choose "Settings" and click on "Delete Web Service" at the bottom. 
+
 
 #### Conclusion
 You have successfully created and deployed a simple Flask web application that greets users based on their input. This exercise should have reinforced your understanding of Flask, HTML, and cloud deployment using Render.
