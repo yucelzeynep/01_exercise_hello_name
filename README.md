@@ -6,7 +6,7 @@ In this exercise, you will create a simple web application using Flask that allo
 #### Step-by-Step Instructions
 
 1. **Set Up Your Environment**:
-   - Ensure you have Python installed on your machine. You can download it from [python.org](https://www.python.org/downloads/).
+   - Ensure you have Python installed on your machine. 
    - Create a new directory for your project and navigate into it:
      ```bash
      mkdir flask_greeting_app
@@ -17,7 +17,7 @@ In this exercise, you will create a simple web application using Flask that allo
    - Set up a virtual environment to manage your project dependencies:
      ```bash
      python -m venv venv
-     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+     source venv/bin/activate  
      ```
 
 3. **Install Flask**:
@@ -42,7 +42,7 @@ def home():
     if request.method == 'POST':
         name = request.form.get('name')  # Get the name from the form input
         if name:  # Check if the name is provided
-            greeting = f'Hello, {name}! Welcome to our Flask application.'  # Create the greeting
+            greeting = f'Hello, {name}! Welcome to my Flask application.'  # Create the greeting
     return render_template('index.html', greeting=greeting)  # Render the index.html template
 
 # Run the application if this script is executed
