@@ -89,11 +89,6 @@ if __name__ == '__main__':
      ```
    - Create a `render.yaml` file for Render configuration:
 
-8. **Create a Repository on GitHub and Commit**:
-   - Open a GitHub account if you do not have one.
-   - Go to your project folder and initialize a repository
-   - Commit your files
-
 ```yaml
 services:
   - type: web
@@ -103,6 +98,11 @@ services:
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python app.py"
 ```
+
+8. **Create a Repository on GitHub and Commit**:
+   - Open a GitHub account if you do not have one.
+   - Go to your project folder and initialize a repository
+   - Commit your files
 
 9. **Deploy on Render**:
    - Go to [Render.com](https://render.com/) and create an account if you don't have one.
