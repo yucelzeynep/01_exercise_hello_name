@@ -89,7 +89,7 @@ if __name__ == '__main__':
      ```
    - Create a `render.yaml` file for Render configuration:
 
-8. **Create a Repository on GitHub and commit your files**:
+8. **Create a Repository on GitHub and Commit**:
    - Open a GitHub account if you do not have one.
    - Go to your project folder and initialize a repository
    - Commit your files
