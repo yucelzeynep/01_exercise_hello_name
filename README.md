@@ -26,31 +26,7 @@ In this exercise, you will create a simple web application using Flask that allo
      pip install Flask
      ```
 
-4. **Create the Flask Application**:
-   - Create a file named `app.py` and add the following code:
-
-```python
-from flask import Flask, render_template, request
-
-# Initialize the Flask application
-app = Flask(__name__)
-
-# Define the home route
-@app.route('/', methods=['GET', 'POST'])
-def home():
-    greeting = ''  # Variable to store the greeting message
-    if request.method == 'POST':
-        name = request.form.get('name')  # Get the name from the form input
-        if name:  # Check if the name is provided
-            greeting = f'Hello, {name}! Welcome to my Flask application.'  # Create the greeting
-    return render_template('index.html', greeting=greeting)  # Render the index.html template
-
-# Run the application if this script is executed
-if __name__ == '__main__':
-    app.run(debug=True)
-```
-
-5. **Create the HTML Template**:
+4. **Create the HTML Template**:
    - Create a folder named `templates` and inside it create a file named `index.html` with the following content:
 
 ```html
@@ -73,6 +49,30 @@ if __name__ == '__main__':
     {% endif %}
 </body>
 </html>
+```
+
+5. **Create the Flask Application**:
+   - Create a file named `app.py` and add the following code:
+
+```python
+from flask import Flask, render_template, request
+
+# Initialize the Flask application
+app = Flask(__name__)
+
+# Define the home route
+@app.route('/', methods=['GET', 'POST'])
+def home():
+    greeting = ''  # Variable to store the greeting message
+    if request.method == 'POST':
+        name = request.form.get('name')  # Get the name from the form input
+        if name:  # Check if the name is provided
+            greeting = f'Hello, {name}! Welcome to my Flask application.'  # Create the greeting
+    return render_template('index.html', greeting=greeting)  # Render the index.html template
+
+# Run the application if this script is executed
+if __name__ == '__main__':
+    app.run(debug=True)
 ```
 
 6. **Run the Application Locally**:
