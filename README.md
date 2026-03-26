@@ -16,8 +16,8 @@ In this exercise, you will create a simple web application using Flask that allo
 2. **Create a Virtual Environment**:
    - Set up a virtual environment to manage your project dependencies:
      ```bash
-     python -m venv venv
-     source venv/bin/activate  
+     python -m venv venv_hello
+     source venv_hello/bin/activate  
      ```
 
 3. **Install Flask**:
