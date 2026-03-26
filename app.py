@@ -11,7 +11,7 @@ def home():
     if request.method == 'POST':
         name = request.form.get('name')  # Get the name from the form input
         if name:  # Check if the name is provided
-            greeting = f'Hello, {name}! Welcome to our Flask application.'  # Create the greeting
+            greeting = f'Hello, {name}! Welcome to your Flask application.'  # Create the greeting
     return render_template('index.html', greeting=greeting)  # Render the index.html template
 
 # Run the application if this script is executed
