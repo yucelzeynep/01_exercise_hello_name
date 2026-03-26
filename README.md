@@ -1,7 +1,7 @@
 ### Programming Exercise: Create a Simple Flask Web Application with Render
 
 #### Exercise Definition
-In this exercise, you will create a simple web application using Flask that allows users to input their name and receive a personalized greeting. The application will be hosted on Render, a cloud service that simplifies deployment.
+In this exercise, you will create a simple web application using Flask that allows users to input their name and receive a personalized greeting. The application will be hosted on Render, a cloud service with simple deployment.
 
 #### Step-by-Step Instructions
 
