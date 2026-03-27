@@ -83,7 +83,8 @@ def home():
 
 # Run the application if this script is executed
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Use the PORT environment variable or fallback to 5000
+    app.run(host='0.0.0.0', port=port, debug=True)
 ```
 
 6. **Run the Application Locally**:
@@ -114,18 +115,18 @@ services:
 ```
 
 8. **Create a Repository on GitHub and Commit**:
-   - Go to your project folder and initialize a repository
+   - Go to your project folder, initialize a repository and commit
      ```bash
      git init
      git add .
      git commit -m "Initial commit"
      ```
-   - Commit your files
+   - Push your files
      ```bash
      git remote add origin https://github.com/yourusername/your-repo.git
      git push -u origin master
      ```
-You can also get the UTL to your repository by clicking on "<> Code" at the top of your repository page.
+You can also get the URL to your repository by clicking on "<> Code" at the top of your repository page.
 
 9. **Deploy on Render**:
    - Go to [Render.com](https://render.com/) and create an account, if you do not have one.
@@ -135,7 +136,9 @@ You can also get the UTL to your repository by clicking on "<> Code" at the top 
    - On the next page, enter "python app.py" as start command and choose free plan.
    - Click on "Deploy Web Application" at the bottom (it will take some time...) 
    - Render will automatically detect the `render.yaml` file and set up your application.
-   - After deployment, you will be provided with a live URL for your application around the upper part of the browser window.
+   - After deployment, you will be provided with a live URL for your application around the upper part of the browser window. Try it!
+
+10. **Delete your project**:
    - Click on render icon on the upper left, find your deployment under the list, click on "..." on the right, choose "Settings" and click on "Delete Web Service" at the bottom. 
 
 
