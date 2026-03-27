@@ -122,8 +122,8 @@ services:
      ```
    - Commit your files
      ```bash
-    git remote add origin https://github.com/yourusername/your-repo.git
-    git push -u origin master
+     git remote add origin https://github.com/yourusername/your-repo.git
+     git push -u origin master
      ```
 
 9. **Deploy on Render**:
