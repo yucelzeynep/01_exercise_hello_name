@@ -95,7 +95,7 @@ if __name__ == '__main__':
    - You will see some debug messages on the terminal (e.g. Running on http://127.0.0.1:5000)
    - Open your browser and go to `http://127.0.0.1:5000/`. You should see the greeting app. Try it.
 
-7. **Prepare for Deployment on Render**:
+7. **Prepare for deployment on Render**:
    - In the terminal, make sure you are under the directory '/greeting_app'.
    - Create a `requirements.txt` file to specify your project dependencies:
      ```bash
