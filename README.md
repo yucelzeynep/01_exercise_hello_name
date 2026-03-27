@@ -125,6 +125,7 @@ services:
      git remote add origin https://github.com/yourusername/your-repo.git
      git push -u origin master
      ```
+You can also get the link to your repo by clicking on "<> Code" at the top of your repository page.
 
 9. **Deploy on Render**:
    - Go to [Render.com](https://render.com/) and create an account, if you do not have one.
