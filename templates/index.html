@@ -1,21 +1,51 @@
 <!DOCTYPE html>
+
+<!-- 
+It is good practice to define the language of the document to ensure 
+compatibility with search engines, screen readers, browser behavior, 
+and other tools. However, even if you omit these, your file will 
+still be rendered by the browser.
+
+Similarly, it is advisable to define the character set, viewport, 
+title, and other metadata within the head section for better 
+accessibility and performance.
+-->
 <html lang="en">
 
 <head>
+    <!-- Set character encoding for the document to UTF-8 -->
     <meta charset="UTF-8">
+
+    <!-- Ensure proper rendering and touch zooming on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Greeting App</title>
+
+    <!-- Title of the web page shown in browser tab -->
+    <title>Greeting App</title>
 </head>
 
 <body>
-    <h1>Here is the Flask Greeting App</h1>
+    <!-- Main heading of the page -->
+    <h1>Here is a simple Greeting App</h1>
+
+    <!-- Form for user to input their name -->
+    <!-- The form submits data to the server using the POST method -->
     <form method="POST">
+        <!-- Label for the name input field -->
         <label for="name">Enter your name:</label>
+
+        <!-- Text input field for user to type their name -->
+        <!-- 'id' links it to the label, 'name' is the key sent to server, 
+         'required' makes it mandatory -->
         <input type="text" id="name" name="name" required>
+
+        <!-- Button to submit the form -->
         <button type="submit">Submit</button>
     </form>
+
+    <!-- Jinja2 template conditional to check if a greeting message exists -->
     {% if greeting %}
-    <h2>{{ greeting }}</h2> <!-- Display the greeting message if available -->
+    <!-- Display the greeting message if it has been set -->
+    <h2>{{ greeting }}</h2>
     {% endif %}
 </body>
 
