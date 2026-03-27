@@ -125,12 +125,13 @@ services:
      git remote add origin https://github.com/yourusername/your-repo.git
      git push -u origin master
      ```
-You can also get the link to your repo by clicking on "<> Code" at the top of your repository page.
+You can also get the UTL to your repository by clicking on "<> Code" at the top of your repository page.
 
 9. **Deploy on Render**:
    - Go to [Render.com](https://render.com/) and create an account, if you do not have one.
    - Once logged in, click on "Projects" on the left pane and then "Deploy a Web Service"  under "Overview". 
-   - Connect it to your GitHub account and select the repository containing your Flask application.
+   - Connect it to your GitHub account.
+   - Click on "Public Git Repository" tab and enter the URL to your repository. 
    - As start command, enter "python app.py"
    - Render will automatically detect the `render.yaml` file and set up your application.
    - After deployment, you will be provided with a live URL for your application around the upper part of the browser window.
