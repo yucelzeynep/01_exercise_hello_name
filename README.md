@@ -1,4 +1,4 @@
-### Programming Exercise: Create a Simple Web Application and deploy it
+### Programming Exercise: Create a simple web application and deploy it
 
 #### Exercise Definition
 In this exercise, you will create a web application, host it locally using Flask and then deploy it with Render. 
