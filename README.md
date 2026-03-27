@@ -132,7 +132,8 @@ You can also get the UTL to your repository by clicking on "<> Code" at the top 
    - Once logged in, click on "Projects" on the left pane and then "Deploy a Web Service"  under "Overview". 
    - Connect it to your GitHub account.
    - Click on "Public Git Repository" tab and enter the URL to your repository. 
-   - As start command, enter "python app.py"
+   - On the next page, enter "python app.py" as start command and choose free plan.
+   - Click on "Deploy Web Application" at the bottom (it will take some time...) 
    - Render will automatically detect the `render.yaml` file and set up your application.
    - After deployment, you will be provided with a live URL for your application around the upper part of the browser window.
    - Click on render icon on the upper left, find your deployment under the list, click on "..." on the right, choose "Settings" and click on "Delete Web Service" at the bottom. 
